@@ -228,7 +228,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-
 }
 
 .main__content h2 {
@@ -243,7 +242,7 @@
 }
 
 .main__content p {
-    maring-top: 1rem;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
@@ -262,4 +261,40 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+#main__img {
+    height: 80%;
+    width: 80%;
+
 }
